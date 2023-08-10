@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 55px;
+    width:100%;
+}
+
+nav>div{
+    padding: 0% 5%;
+}
+
+nav img{
+    height:35px;
+}
+
+#cart{
+    font-weight: bold;
+    align-items: center;
+}
+
+header{
+    height: 450px;
+    width: 100%;
+    background-image: url(assets/kw-background.png);
+    background-size: 100% 100%;
+    color: white;
+}
+
+.header-text{
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 20%;
+    padding: 3% 5%;
+}
+
+header h1{
+    font-size: 8vh;
+}
+
+header h5{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.section{
+    margin: 4% 0%;
+}
+
+.button{
+    cursor: pointer;
+    background-color: rgb(61, 180, 213);
+    color: white;
+    padding: 3%;
+    border-radius: 4px;
+}
+
+.buy img{
+    width:20px;
+    padding-left: 6px;
+}
+
+.buy{
+    margin-top: 10px;
+}
+
+h1,h2{
+    font-weight: bold;
+}
+
+h4{
+    color:grey;
+    font-weight: lighter;
+}
+
+h6{
+    font-size: 16px;
+}
+
+.buy p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.books{
+    max-width: 200px;
+}
+
+.games,.crafts{
+    max-width: 300px;
+}
+
+.flex{
+    display: flex;
+}
+
+.section-container{
+    flex-direction: column;
+    padding: 3%;
+}
+
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+footer img{
+    height: 110px;
+    width: 130px;
+}
+
+footer{
+    background-color: rgb(52, 50, 50);
+    color: white;
+}
+
+#details{
+    flex-direction: column;
+    align-items: center;
+}
+
+@media  screen and (max-width:700px) {
+    header{
+        height: 200px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    header h1{
+        font-size: 4.9vh;
+    }
+
+    header h5{
+        font-size: 15px;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}
