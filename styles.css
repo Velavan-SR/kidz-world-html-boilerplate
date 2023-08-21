@@ -17,6 +17,7 @@ nav img{
 }
 
 #cart{
+    cursor: pointer;
     font-weight: bold;
     align-items: center;
 }
