@@ -2,6 +2,17 @@ let buttons = document.querySelectorAll('.button');
 let cartValue = document.getElementById('cart-value')
 let itemsArray = [];
 let totalPrice = 0;
+var whatsappApi = "https://api.whatsapp.com/send?phone=6374134070&text=Order%20details";
+
+function orderDetails(){
+    itemsArray.forEach((ele) =>{
+        if (ele.quantity!==0){
+            whatsappApi+='%0A'+ele.itemName+'%20'+ele.quantity
+        }
+    })
+    whatsappApi+='%0A'+"The total payable amount is $"+totalPrice
+}
+
 
 buttons.forEach((button,index) => {
     button.addEventListener('click',(event)=>{
@@ -34,4 +45,6 @@ document.getElementById('cart').addEventListener('click',()=>{
         console.log(obj)
     })
     console.log("The total payable amount is $"+totalPrice)
+    orderDetails();
+    window.open(whatsappApi);
 })
