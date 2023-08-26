@@ -114,6 +114,7 @@ h6{
 footer img{
     height: 110px;
     width: 130px;
+    border-radius: 50%;
 }
 
 footer{
@@ -128,18 +129,20 @@ footer{
 
 @media  screen and (max-width:700px) {
     header{
-        height: 200px;
+        height: 300px;
+        width: 100%;
         font-size: 15px;
         text-align: center;
+        background-size: 30% 30%;
     }
 
     header h1{
         font-size: 4.9vh;
     }
 
-/*     header h5{
-        font-size: 15px;
-    } */
+    header h5{
+        font-size: 2.9vh;
+    }
 
     body{
         text-align: center;
